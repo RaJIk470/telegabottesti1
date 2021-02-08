@@ -66,3 +66,7 @@ async def echo(message):
 	add_user(message.from_user)
 	print(message)
 	await asyncio.sleep(1)
+
+'''@dp.edited_message_handler()	
+async def edit_msg(message):
+	await bot.send_message(chat_id = message.chat.id, text = "найс редачиш чел " + message.text)'''
